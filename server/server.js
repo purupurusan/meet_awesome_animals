@@ -29,6 +29,23 @@ function registerUser(params) {
   });
 }
 
+function getUser(userid) {
+  var params = {
+    TableName: 'users',
+    Key: {
+        "userid": {"S": userid}
+    },
+    AttributesToGet: ['userid']
+  };
+  dynamodb.getItem(params, function (err, data) {
+    if (err) {
+        console.log(err, err.stack);
+    } else {
+        console.log(data);
+    }
+  });
+}
+
 //GETリクエストでルートにアクセスが会った時の動作
 app.get('/', (req, res)=>{
   let index = fs.readFileSync('./public/index.html', 'utf-8');
@@ -51,7 +68,8 @@ app.get('/register', (req, res)=>{
     }
   };
 
-  registerUser(params);
+  // registerUser(params);
+  getUser("testhash2")
 
   const appRendered = renderToString(
     <App />
