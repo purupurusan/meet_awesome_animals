@@ -12,7 +12,7 @@ const Header = () => (
       <a className = {'cafe'}>cafe </a>
       <a className = {'activity'}>activity </a>
       <a className = {'sitter'}>sitter </a>
-      <a className = {'login'}>login</a>
+      <a className = {'login'} href = {'/login/login_top.html'}>login</a>
     </div>
     <style jsx>{`
       header{
