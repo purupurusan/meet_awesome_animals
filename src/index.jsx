@@ -1,38 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './App';
-import Body from './body';
+import Header from './container/common/header';
+import Footer from './container/common/footer';
+import TopImage from './container/topImage/top';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+const IndexBody = () =>(
+  <div>
+    <Header></Header>
+    <TopImage></TopImage>
+    <Footer></Footer>
+  </div>
 );
 
-//classNameでcssを指定
-// var Index = React.Component({
-//   render(){
-//     return (
-//       <div className="style">
-//         <h1>ボディです</h1>
-//       </div>
-//     );
-//   }
-// });
-
 ReactDOM.render(
-  <Body />,
-  document.getElementById('content')
+  <IndexBody />,
+  document.getElementById('body')
 );
 
-// if(module.hot){
-//   module.hot.accept('./App', ()=>{
-//     const NextApp = require('./App').default;
-//     render(NextApp);
-//   });
-// }
-
-// ReactDOM.hydrate(
-//   <App />,
-//   document.getElementById('root')
-// );

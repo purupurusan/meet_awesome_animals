@@ -9,8 +9,12 @@
   "devDependencies": {
     "@babel/node": "^7.6.3",
     "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.16.0",
+    "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-hot-middleware": "^2.25.0"
@@ -20,8 +24,21 @@
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "express": "^4.17.1",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-spinners-kit": "^1.9.0",
+    "styled-components": "^4.4.1",
     "styled-jsx": "^3.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purupurusan/meet_awesome_animals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/purupurusan/meet_awesome_animals/issues"
+  },
+  "homepage": "https://github.com/purupurusan/meet_awesome_animals#readme",
+  "description": ""
 }
