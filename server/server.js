@@ -7,7 +7,7 @@ import webpackConfig from '../webpack.config.dev.babel';
 import webpackMiddleware from 'webpack-dev-middleware';
 import HMR from 'webpack-hot-middleware';
 
-import App from '../src/App';
+import Header from '../src/common/header';
 
 const app = express();
 
@@ -20,7 +20,7 @@ app.get('/', (req, res)=>{
   let index = fs.readFileSync('./public/index.html', 'utf-8');
 
   const appRendered = renderToString(
-    <App />
+    <Header />
   );
   index = index.replace('<%= preloadedApplication %>', appRendered);  res.send(index);
 });
