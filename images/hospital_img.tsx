@@ -1,5 +1,7 @@
 import React from 'react';
 
+/* eslint max-len: ["error", { "code": 1000000, "tabWidth": 4 }]*/
+// eslint-disable-next-line require-jsdoc
 function Icon() {
   return (
     <svg

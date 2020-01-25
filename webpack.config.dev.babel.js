@@ -3,30 +3,40 @@ import path from 'path';
 
 export default {
   mode: 'development',
-  entry:[
-    'webpack-hot-middleware/client',
-    path.resolve(__dirname, 'src/')
-  ],
-  output:{
+  entry: ['webpack-hot-middleware/client', path.resolve(__dirname, 'src/')],
+  devtool: 'inline-source-map',
+  output: {
     path: path.resolve(__dirname, 'public'),
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
-  plugins:[
-    new webpack.HotModuleReplacementPlugin()
-  ],
-  resolve:{
-    extensions: ['.js','.json','.jsx']
+  plugins: [new webpack.HotModuleReplacementPlugin()],
+  resolve: {
+    extensions: ['.js', '.json', '.jsx'],
   },
-  module:{
-    rules:[
+  module: {
+    rules: [
       {
         test: /\.jsx?$/,
-        use:{
-          loader: 'babel-loader'
+        use: {
+          loader: 'babel-loader',
         },
-        include: path.resolve(__dirname, 'src')
-      }
-    ]
-  }
+        include: path.resolve(__dirname, 'src'),
+      },
+      {
+        test: /\.tsx?$/,
+        use: ['babel-loader', 'awesome-typescript-loader'],
+      },
+
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader',
+      },
+    ],
+  },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM',
+  },
 };

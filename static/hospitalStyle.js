@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderToStaticMarkup } from 'react-dom/server';
+import {renderToStaticMarkup} from 'react-dom/server';
 
 import HImg from '../images/hospital_img';
 
@@ -8,7 +8,7 @@ const background = `url("data:image/svg+xml,${svgString}")`;
 
 export const hospitalImg = {
   background: background,
-  backgroundSize: 'cover'
+  backgroundSize: 'cover',
 };
 
 export default <style>{`
