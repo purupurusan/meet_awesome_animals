@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import {Map, TileLayer, Marker, Popup} from 'react-leaflet';
 import Header from '../common/header';
 import Footer from '../common/footer';
 import hospitalStyle, {hospitalImg} from '../../../static/hospitalStyle';
