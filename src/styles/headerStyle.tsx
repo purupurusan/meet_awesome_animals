@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
 
-export default <style>{`
+export default (
+  <style>{`
 header{
     background-color: white;
     padding: 0 10%;
@@ -12,20 +13,22 @@ header{
   }
 
   li {
-    text-decoration: none;
     display: inline-block;
-    padding-left: 5%;
+    padding-left: 8%;
     vertical-align: middle;
   }
 
-  .nav{
-    font-size: 120%;
+  a{
+    font-size: 130%;
     color: black;
     text-decoration: none;
   }
 
   .nav:hover{
       color: orange;
-      border-bottom: solid 2px gray;
   }
-`}</style>;
+
+  .login{
+  }
+`}</style>
+);

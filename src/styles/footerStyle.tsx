@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
 
-export default <style>{`
+export default (
+  <style>{`
 footer {
   border-top: 1px solid white;
   padding-top: 5px;
@@ -31,4 +32,5 @@ footer p {
 }
 
 }
-`}</style>;
+`}</style>
+);

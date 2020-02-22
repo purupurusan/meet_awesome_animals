@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 /* eslint max-len: ["error", { "code": 1000000, "tabWidth": 4 }]*/
 // eslint-disable-next-line require-jsdoc
-function Icon() {
+const Icon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +26,6 @@ function Icon() {
       </g>
     </svg>
   );
-}
+};
 
 export default Icon;

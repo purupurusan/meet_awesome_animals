@@ -24,6 +24,7 @@
     "isolatedModules": true
   },
   "typeRoots": [
+    "./@types",
     "node_modules/@types",
     "./styled-jsx"
   ],
@@ -34,8 +35,9 @@
     "node_modules"
   ],
   "include": [
+    "src/**/*",
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx", "webpack.config.dev.babel.js"
   ]
 }
