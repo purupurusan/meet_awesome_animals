@@ -25,7 +25,7 @@ header{
   }
 
   .nav:hover{
-      color: orange;
+      color: #ff7c5c;
   }
 
   .login{

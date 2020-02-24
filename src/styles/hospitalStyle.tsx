@@ -94,5 +94,14 @@ export default (
         height: 2000px;
     }
 
+    .hospitalTable{
+        padding: 3% 10%;
+        width: 100%;
+    }
+
+    .hopitalList{
+        padding:5% 10%;
+    }
+
 `}</style>
 );
