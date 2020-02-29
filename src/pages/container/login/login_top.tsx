@@ -1,18 +1,22 @@
 import React from "react";
 import Layout from "../../../layouts/layout";
+import loginTopStyle from "../../../styles/loginTopStyle";
 
-const index: React.FC = () => {
+const LoginTop: React.FC = () => {
   return (
     <>
       <Layout>
-        <form>
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Password" />
-          <input type="submit" />
-        </form>
+        {loginTopStyle}
+        <div className="firstWrapper">
+          <form>
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Password" />
+            <input type="submit" />
+          </form>
+        </div>
       </Layout>
     </>
   );
 };
 
-export default index;
+export default LoginTop;
